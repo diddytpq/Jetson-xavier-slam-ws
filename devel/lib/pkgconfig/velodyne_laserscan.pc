@@ -1,0 +1,8 @@
+prefix=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel
+
+Name: velodyne_laserscan
+Description: Description of velodyne_laserscan
+Version: 1.6.1
+Cflags: -I/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: sensor_msgs

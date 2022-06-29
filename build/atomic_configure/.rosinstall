@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/setup.sh
