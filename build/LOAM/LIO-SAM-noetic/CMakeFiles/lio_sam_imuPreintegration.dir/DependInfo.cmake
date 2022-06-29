@@ -10,6 +10,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BOOST_OPTIONAL_ALLOW_BINDING_TO_RVALUES"
+  "BOOST_OPTIONAL_CONFIG_ALLOW_BINDING_TO_RVALUES"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
@@ -59,9 +61,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/aarch64-linux-gnu/qt5/QtGui"
   "/usr/include/aarch64-linux-gnu/qt5/QtCore"
   "/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++"
-  "/usr/include/gtsam/3rdparty/metis"
-  "/usr/include/gtsam/3rdparty/SuiteSparse_config"
-  "/usr/include/gtsam/3rdparty/CCOLAMD"
+  "/usr/local/include/gtsam/3rdparty/metis"
+  "/usr/local/include/gtsam/3rdparty/SuiteSparse_config"
+  "/usr/local/include/gtsam/3rdparty/CCOLAMD"
+  "/usr/local/include"
+  "/usr/local/include/gtsam/3rdparty/Eigen"
   )
 
 # Targets to which this target links.

@@ -396,7 +396,7 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
 //The directory containing a CMake configuration file for GTSAM.
-GTSAM_DIR:PATH=/usr/lib/cmake/GTSAM
+GTSAM_DIR:PATH=/usr/local/lib/cmake/GTSAM
 
 //GTSAM include directory
 GTSAM_INCLUDE_DIR:PATH=/usr/lib/cmake/GTSAM/../../../include
@@ -1194,6 +1194,9 @@ ignition-msgs1_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/ignition-msgs1
 //The directory containing a CMake configuration file for ignition-transport4.
 ignition-transport4_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/ignition-transport4
 
+//The directory containing a CMake configuration file for joy.
+joy_DIR:PATH=/opt/ros/melodic/share/joy/cmake
+
 //The directory containing a CMake configuration file for jsoncpp.
 jsoncpp_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/jsoncpp
 
@@ -1247,6 +1250,27 @@ nodelet_topic_tools_DIR:PATH=/opt/ros/melodic/share/nodelet_topic_tools/cmake
 
 //Path to a library.
 onelib:FILEPATH=/usr/lib/aarch64-linux-gnu/libsdformat.so
+
+//Value Computed by CMake
+openrobot_control_6omni_BINARY_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/build/mecanum_robot_pkg/openrobot_control
+
+//Value Computed by CMake
+openrobot_control_6omni_SOURCE_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/src/mecanum_robot_pkg/openrobot_control
+
+//Value Computed by CMake
+openrobot_vesc_driver_BINARY_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/build/mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_driver
+
+//Value Computed by CMake
+openrobot_vesc_driver_SOURCE_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/src/mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_driver
+
+//Value Computed by CMake
+openrobot_vesc_msgs_BINARY_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/build/mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_msgs
+
+//The directory containing a CMake configuration file for openrobot_vesc_msgs.
+openrobot_vesc_msgs_DIR:PATH=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/share/openrobot_vesc_msgs/cmake
+
+//Value Computed by CMake
+openrobot_vesc_msgs_SOURCE_DIR:STATIC=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/src/mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_msgs
 
 //The directory containing a CMake configuration file for pcl_conversions.
 pcl_conversions_DIR:PATH=/opt/ros/melodic/share/pcl_conversions/cmake
@@ -1319,6 +1343,9 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for serial.
+serial_DIR:PATH=/opt/ros/melodic/share/serial/cmake
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
@@ -1748,7 +1775,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

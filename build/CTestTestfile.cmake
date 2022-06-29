@@ -6,8 +6,11 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("mecanum_robot_pkg/mecanum_robot_gazebo")
+subdirs("mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_msgs")
 subdirs("velodyne_pkg/velodyne")
 subdirs("velodyne_pkg/velodyne_msgs")
+subdirs("mecanum_robot_pkg/openrobot_vesc_rosdriver/openrobot_vesc_driver")
+subdirs("mecanum_robot_pkg/openrobot_control")
 subdirs("ros-ngimu")
 subdirs("LOAM/LIO-SAM-noetic")
 subdirs("LOAM/loam_velodyne")

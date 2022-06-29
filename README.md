@@ -1,45 +1,37 @@
 # Jetson-xavier-slam-ws
 Jetson xavier slam workspace
 
-##Dependency
+## 1. Dependency
 
-pcl 1.8 > 
-GTSAM
-sudo add-apt-repository ppa:borglab/gtsam-release-4.0
-sudo apt install libgtsam-dev libgtsam-unstable-dev
+### 1.1. pcl ver --> 1.10  
+	https://ropiens.tistory.com/65
+### 1.2 GTSAM
+	https://github.com/borglab/gtsam/tree/4.0.2
 
-## check usb port and port permission 
-```bash
-ls /dev/ttyUSB* 
-sudo chmod 666 /dev/tty*
-```
 
-## Record topic
-```bash
-rosbag record /velodyne_points /tf /imu/data
-roscore
-rosparam set /use_sim_time true
-rosbag play --clock --pause rosbag/*.bag
-```
+## 2. check usb port and port permission 
+	ls /dev/ttyUSB* 
+	sudo chmod 666 /dev/tty*
 
-## Run lio sam 
-```bash
-roslaunch velodyne_pointcloud VLP16_points.launch
-roslaunch ros-ngimu run.launch
+## 3. Record topic
+	rosbag record /velodyne_points /tf /imu/data
+	roscore
+	rosparam set /use_sim_time true
+	rosbag play --clock --pause rosbag/*.bag
 
-roslaunch lio-sam run.launch 
-rosbag play --clock --pause rosbag/*.bag --topic /velodyne_points /tf /imu/data
+## 4. Run lio sam 
+	roslaunch velodyne_pointcloud VLP16_points.launch
+	roslaunch ros-ngimu run.launch
 
-```
+	roslaunch lio_sam run.launch 
+	rosbag play --clock --pause rosbag/*.bag --topic /velodyne_points /tf /imu/data
 
-## Run mecanum_robot_control_joy
-```bash
-roslaunch openrobot_control openrobot_control_6omni.launch
-```
+## 5. Run mecanum_robot_control_joy
+	roslaunch openrobot_control openrobot_control_6omni.launch
 
-### trouble shooting
 
-#### cv_bridge Error
-
-##### https://jstar0525.tistory.com/118
-
+## 6. trouble shooting
+* cv_bridge Error
+	```
+	https://jstar0525.tistory.com/118
+	```

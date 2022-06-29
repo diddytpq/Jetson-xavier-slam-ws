@@ -455,7 +455,7 @@ lio_sam_imuPreintegration_EXTERNAL_OBJECTS =
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.1.1
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libopencv_video.so.4.1.1
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so.4.1.1
-/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libgtsam.so.4.0.3
+/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/local/lib/libgtsam.so.4.0.2
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libpcl_common.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libpcl_octree.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libpcl_io.so
@@ -721,15 +721,14 @@ lio_sam_imuPreintegration_EXTERNAL_OBJECTS =
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.1.1
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.1.1
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_serialization.so
+/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_system.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_regex.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_timer.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/lib/aarch64-linux-gnu/libmetis-gtsam.so
+/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: /usr/local/lib/libmetis.so
 /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration: LOAM/LIO-SAM-noetic/CMakeFiles/lio_sam_imuPreintegration.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drcl_jetson/workspace/Jetson-xavier-slam-ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/devel/lib/lio_sam/lio_sam_imuPreintegration"
 	cd /home/drcl_jetson/workspace/Jetson-xavier-slam-ws/build/LOAM/LIO-SAM-noetic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lio_sam_imuPreintegration.dir/link.txt --verbose=$(VERBOSE)
